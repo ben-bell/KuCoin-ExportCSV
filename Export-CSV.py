@@ -50,6 +50,7 @@ for row in coins:
 		try:
 			dealtOrders = client.get_dealt_orders(symbol='{0}'.format(symbol))
 			data = dealtOrders['datas']
+			break
 		except:
 			retry = retry + 1
 			# quit if we hit the limit
@@ -85,6 +86,7 @@ for row in coins:
 					dealtOrders = client.get_dealt_orders(symbol='{0}'.format(symbol), page=nextPage)
 					currPageNo = dealtOrders['currPageNo']
 					data = dealtOrders['datas']
+					break
 				except:
 					retry = retry + 1
 					# quit if we hit the limit
