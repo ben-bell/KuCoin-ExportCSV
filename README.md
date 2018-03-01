@@ -1,5 +1,5 @@
 # KuCoin-ExportCSV
-Python script to export transactions to a CSV file readable by CoinTracking.info
+Python script to export transactions to a CSV file readable by CoinTracking.info.  This includes Deposits, Withdrawals and Transactions.
 
 Prerequisites
 
@@ -30,7 +30,7 @@ When KuCoin servers are overloaded, expect to get "Invalid nonce" errors, its pr
 
 ToDo:
 
-Add Income and Deposits.  I don't think you can get KuCoin bonus amounts unfortunately.
+I don't think you can get KuCoin bonus amounts unfortunately (ie: KCS bonus and Gas amounts from holding NEO - if you can let me know!)
 
 Donations:
 
