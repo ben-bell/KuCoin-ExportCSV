@@ -170,7 +170,7 @@ for row in coins:
 			while (retry < maxretries):
 				try:
 					deposits = client.get_deposits(coin='{0}'.format(coin), page=nextPage)
-					currPageNo = dealtOrders['currPageNo']
+					currPageNo = deposits['currPageNo']
 					data = deposits['datas']
 					break
 				except:
@@ -228,7 +228,7 @@ for row in coins:
 			while (retry < maxretries):
 				try:
 					withdrawals = client.get_withdrawals(coin='{0}'.format(coin), page=nextPage)
-					currPageNo = dealtOrders['currPageNo']
+					currPageNo = withdrawals['currPageNo']
 					data = withdrawals['datas']
 					break
 				except:
